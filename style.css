@@ -1,70 +1,81 @@
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #fef8f8;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+
+.bg-img {
+  background-image: url("bg.jpg");
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
   display: flex;
-  justify-content: center;
-  padding: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 20px;
 }
 
-.container {
-  background: #ffffff;
-  padding: 30px;
-  border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  max-width: 420px;
-  width: 100%;
+.form-box {
+  width: 500px;
+  padding: 16px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  background-color: rgba(0, 0, 0, 0.6); 
+  overflow-y: auto;
+  max-height: 90vh; 
 }
 
-h1 {
-  text-align: center;
-  color: #6c5ce7;
-}
-
-.question {
-  margin-bottom: 20px;
-}
-
-label {
-  font-weight: 600;
-  color: #2d3436;
-}
-
-input {
+input, select {
   width: 100%;
   padding: 10px;
-  margin-top: 6px;
-  border: 1px solid #dfe6e9;
-  border-radius: 8px;
-  font-size: 14px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: none;
 }
 
-input:focus {
-  outline: none;
-  border-color: #6c5ce7;
-  box-shadow: 0 0 3px #a29bfe;
+select {
+  width: 49%;
+}
+
+label, p, h2 {
+  color: white;
+  font-size: 13px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.right-side {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  color: white;
+  font-size: 13px;
+}
+
+.checkbox {
+  margin-top: 3px;
 }
 
 button {
   width: 100%;
-  padding: 12px;
-  background-color: #6c5ce7;
+  padding: 10px;
+  background-color: #e28743;
   color: white;
-  font-size: 16px;
   border: none;
-  border-radius: 10px;
+  border-radius: 5px;
   cursor: pointer;
-  margin-top: 10px;
-  transition: background-color 0.3s ease;
 }
-
-button:hover {
-  background-color: #5a4fcf;
-}
-
-#score {
-  margin-top: 20px;
+p{
   text-align: center;
-  font-size: 22px;
-  font-weight: bold;
-  color: #00b894;
+}
+a{
+  color: white;
 }
