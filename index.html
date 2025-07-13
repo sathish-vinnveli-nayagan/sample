@@ -1,66 +1,44 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Saveetha Engineering College</title>
-        <link rel="stylesheet" type="text/css" href="style.css">
-    </head>
-    <body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlipKart Product Gallery</title>
 
-        <div class="bg-img">
-        <form class="form-box">
-                <h2>Admissions Open 2025</h2>
-                <br>
-                <input type="text" placeholder="Enter Name *" required>
-                <br> <br>
-                <input type="email" placeholder="Enter Email Address *" required>
-                <br><br>
-                <input type="tel" placeholder="Enter Mobile Number *" required>
-                <br><br>
-                <input type="password" placeholder="Any Password of Your Choice *" required>
-                <br><br>
-                
-                <select required>
-                    <option value="" disabled selected>State *</option>
-                    <option>Tamil Nadu</option>
-                    <option>Karnataka</option>
-                    <option >Kerala</option>
-                    <option>Andhra Pradesh</option>
-                </select>
-                <select required>
-                    <option value="" disabled selected>City *</option>
-                    <option>Chennai</option>
-                    <option>Coimbatore</option>
-                </select>
-                
-                <br><br>
-                
-                <select required>
-                    <option value="" disabled selected>Course *</option>
-                    <option>CSE</option>
-                    <option>AIDS</option>
-                    <option>AIML</option>
-                    <option>ECE</option>
-                </select>
-                <select required>
-                    <option value="" disabled selected>Specialization *</option>
-                    <option>VLSI</option>
-                    <option>Cyber Security</option>
-                    <option>IOT</option>
-                </select>
-                <br><br>
-                <div class="right-side">
-                <input class="checkbox" type="checkbox" id="terms" name="terms" required>
-                <label for="terms">
-                    I authorise Saveetha Engineering College & its representatives to contact me with updates and notifications via Email/SMS/What'sApp/Call. This will override DND/NDNC *
-                </label>
-                </div>
-                <br><br>
-                <button>APPLY NOW <span style='font-size:15px;'>&#10095;</span></button>
-                <br><br>
-                <p>Already have an Account? <a href="index.html">Login</a></p>
-                <br>
-                <p>Resend Verification Email</p>
-        </form>
+    <link rel="stylesheet" href="style.css"> </head>
+<body>
+    <div class="product-grid-container">
+        <div class="product-card">
+            <img src="samsungS24.jpg" class="product-image">
+            <h2 class="product-name">Samsung Galaxy S24 Ultra (256GB, Titanium Gray)</h2>
+            <p class="product-description">Experience the future with AI features, a powerful processor, and an incredible camera system. Includes S Pen.</p>
+            <span class="product-price">₹1,29,999</span>
+            <a href="#" class="buy-button">Add to Cart</a>
         </div>
-    </body>
+
+        <div class="product-card">
+            <img src="airpods2pro.jpg" alt="Apple AirPods Pro (2nd Gen)" class="product-image">
+            <h2 class="product-name">Apple AirPods Pro (2nd Gen) with MagSafe Charging Case</h2>
+            <p class="product-description">Next-level active noise cancellation and adaptive transparency. Personalized Spatial Audio with dynamic head tracking.</p>
+            <span class="product-price">₹24,900</span>
+            <a href="#" class="buy-button">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="apple-watch.jpg" alt="Apple Watch Series 9" class="product-image">
+            <h2 class="product-name">Apple Watch Series 9 GPS + Cellular (45mm, Midnight)</h2>
+            <p class="product-description">Advanced health features, brighter display, and powerful S9 SiP. Stay connected on the go.</p>
+            <span class="product-price">₹49,999</span>
+            <a href="#" class="buy-button">Add to Cart</a>
+        </div>
+
+        <div class="product-card">
+            <img src="iphone16-pro.jpg" alt="iPhone 16 Pro" class="product-image">
+            <h2 class="product-name">iPhone 16 Pro (256GB, Gold)</h2>
+            <p class="product-description">The ultimate iPhone experience. Breakthrough camera capabilities, a vibrant ProMotion display, and A18 Bionic chip.</p>
+            <span class="product-price">₹1,39,900</span>
+            <a href="#" class="buy-button">Add to Cart</a>
+        </div>
+    </div>
+</body>
 </html>
